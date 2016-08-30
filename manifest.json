@@ -1,0 +1,29 @@
+{
+    "name": "XWord",
+    "manifest_version": 2,
+    "version": "1.0",
+    "description": "Change the way you learn.",
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["js/myscript.js"]
+        }
+    ],
+    "permissions": [
+        "https://*/*",
+        "http://*/*",
+        "contextMenus"  
+        "tabs",
+        "cookies"
+    ],
+    "options_page": "options/index.html",
+    "web_accessible_resources": ["options/index.html"]
+}
