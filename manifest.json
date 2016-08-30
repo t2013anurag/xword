@@ -22,8 +22,12 @@
         "http://*/*",
         "contextMenus",  
         "tabs",
-        "cookies"
+        "cookies",
+        "webRequest"
     ],
     "options_page": "options/index.html",
     "web_accessible_resources": ["options/index.html"]
 }
+
+
+// "Links" : http://stackoverflow.com/questions/11527266/how-to-inject-iframe-with-popup-html-from-content-script
